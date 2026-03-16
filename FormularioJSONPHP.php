@@ -80,18 +80,32 @@ if($_SERVER['REQUEST_METHOD']==='POST'){
             "estado_factura" => rand(1, 5)
         ]
     ];
+
+
 $json_data = json_encode($factura, JSON_PRETTY_PRINT | JSON_UNESCAPED_UNICODE);
     $filename = "factura_" . $uuid . "_" . ($receptor['nombre']) . ".json";
 
-    $rutaCarpeta = "facturas_guardadas";
-    if (!file_exists($rutaCarpeta)) {
-        mkdir($rutaCarpeta, 0777, true);
-    }
+    $archivoFacturas = "facturas_totales.json"; 
+    $contenedorFacturas = "facturas_guardadas";    
+    $rutaTotal = $contenedorFacturas . "/" . $archivoFacturas; 
+
     
-   if (file_put_contents("facturas_guardadas/" . $filename, $json_data)) {
-        echo "<script>alert('Factura $uuid generada');</script>";
-    } else {
-        echo "<script>alert('Error al guardar la factura');</script>";
+    if (!file_exists($contenedorFacturas)) {
+        mkdir($contenedorFacturas, 0777, true);
+    }
+
+    $todasLasFacturas = [];
+    if (file_exists($rutaTotal)) {
+        $contenido = file_get_contents($rutaTotal);
+        $todasLasFacturas = json_decode($contenido, true) ?: [];
+    }
+
+    $todasLasFacturas[$uuid] = $factura[$uuid];
+
+    $json_final = json_encode($todasLasFacturas, JSON_PRETTY_PRINT | JSON_UNESCAPED_UNICODE);
+    
+    if (file_put_contents($rutaTotal, $json_final)) {
+        echo "<script>alert('Factura $uuid registrada.');</script>";
     }
 }
 ?>
@@ -182,9 +196,9 @@ $json_data = json_encode($factura, JSON_PRETTY_PRINT | JSON_UNESCAPED_UNICODE);
         <h3>Conceptos</h3>
         <div id="lista-c">
              <div class="fila">
-        <input type="text" name="desc[]" class="description" placeholder="Description">
-        <input type="number" name="price[]" class="price" placeholder="Price" min="0.01" step="0.01">
-        <input type="number" name="quant[]" class="quant" placeholder="Quantity" min="1">
+        <input type="text" name="desc[]" class="description" placeholder="Description" required>
+        <input type="number" name="price[]" class="price" placeholder="Price" min="0.01" step="0.01"required>
+        <input type="number" name="quant[]" class="quant" placeholder="Quantity" min="1" required>
     </div>
     </div>
    <button type="button" onclick="addConcepto()">+ Añadir Concepto</button>    </div>
@@ -193,8 +207,8 @@ $json_data = json_encode($factura, JSON_PRETTY_PRINT | JSON_UNESCAPED_UNICODE);
         <h3>Impuestos / Descuentos</h3>
         <div id="lista-i">
         <div class="fila">
-            <input type="text" name="imp_nom[]" placeholder="Nombre (IVA/IRPF)">
-            <input type="number" name="imp_pct[]" placeholder="%">
+            <input type="text" name="imp_nom[]" placeholder="Nombre (IVA/IRPF)" required>
+            <input type="number" name="imp_pct[]" placeholder="%" required>
         </div>
     </div>
     <button type="button" onclick="addImpuesto()">+ Añadir Impuesto</button>
@@ -212,9 +226,9 @@ $json_data = json_encode($factura, JSON_PRETTY_PRINT | JSON_UNESCAPED_UNICODE);
     d.className = 'fila';
 
     d.innerHTML = `
-        <input type="text" name="desc[]" class="description" placeholder="Description">
-        <input type="number" name="price[]" class="price" placeholder="Price" min="0.01" step="0.01">
-        <input type="number" name="quant[]" class="quant" placeholder="Quantity" min="1">
+        <input type="text" name="desc[]" class="description" placeholder="Description" required>
+        <input type="number" name="price[]" class="price" placeholder="Price" min="0.01" step="0.01" required>
+        <input type="number" name="quant[]" class="quant" placeholder="Quantity" min="1" required>
     `;
 
     document.getElementById('lista-c').appendChild(d);
@@ -224,8 +238,8 @@ $json_data = json_encode($factura, JSON_PRETTY_PRINT | JSON_UNESCAPED_UNICODE);
     var d = document.createElement('div'); 
     d.className = 'fila';
     d.innerHTML = `
-        <input type="text" name="imp_nom[]" class="imp_nom" placeholder="Nombre (IVA/IRPF)"> 
-        <input type="number" name="imp_pct[]" class="imp_pct" placeholder="%">
+        <input type="text" name="imp_nom[]" class="imp_nom" placeholder="Nombre (IVA/IRPF)" required> 
+        <input type="number" name="imp_pct[]" class="imp_pct" placeholder="%" required>
     `;
     document.getElementById('lista-i').appendChild(d);
 }

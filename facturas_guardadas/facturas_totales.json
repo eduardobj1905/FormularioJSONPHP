@@ -1,0 +1,49 @@
+{
+    "66": {
+        "emisor": {
+            "nombre": "e",
+            "cif": "e",
+            "direccion": "e",
+            "zip": "e",
+            "ciudad": "e",
+            "estado": "e",
+            "pais": "e",
+            "email": "ee",
+            "telefono": ""
+        },
+        "receptor": {
+            "nombre": "e",
+            "cif": "e",
+            "direccion": "e",
+            "zip": "e",
+            "ciudad": "e",
+            "estado": "e",
+            "pais": "e",
+            "email": "e",
+            "telefono": "e"
+        },
+        "conceptos": [
+            {
+                "descripcion": "e",
+                "precio": 8,
+                "cantidad": 8,
+                "subtotal": "64.00"
+            }
+        ],
+        "impuestos": [
+            {
+                "nombre": "ii",
+                "porcentaje": 8,
+                "cantidadCalculada": "5.12"
+            }
+        ],
+        "totales": {
+            "totalSinImpuestos": "64.00",
+            "cantidadDelImpuesto": "5.12",
+            "totalFinal": "69.12"
+        },
+        "fecha_emision": "16\/03\/2026",
+        "fecha_fin_cobro": "16\/04\/2026",
+        "estado_factura": 1
+    }
+}
