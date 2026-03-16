@@ -82,7 +82,7 @@ if($_SERVER['REQUEST_METHOD']==='POST'){
     ];
 $json_data = json_encode($factura, JSON_PRETTY_PRINT | JSON_UNESCAPED_UNICODE);
     $filename = "factura_" . $uuid . "_" . ($receptor['nombre']) . ".json";
-    
+
     $rutaCarpeta = "facturas_guardadas";
     if (!file_exists($rutaCarpeta)) {
         mkdir($rutaCarpeta, 0777, true);
@@ -155,25 +155,25 @@ $json_data = json_encode($factura, JSON_PRETTY_PRINT | JSON_UNESCAPED_UNICODE);
     <div class="bloque">
         <h3>Identificación</h3>
         <label>Emisor:</label>
-        <input type="text" name="emi_name" placeholder="Name">
-        <input type="text" name="emi_cif" placeholder="CIF">
-        <input type="text" name="emi_adress" placeholder="Adress">
-        <input type="text" name="emi_zip_code" placeholder="ZIP">
-        <input type="text" name="emi_city" placeholder="City">
-        <input type="text" name="emi_state" placeholder="State">
-        <input type="text" name="emi_country" placeholder="Country">
+        <input type="text" name="emi_name" placeholder="Name" required>
+        <input type="text" name="emi_cif" placeholder="CIF" required>
+        <input type="text" name="emi_adress" placeholder="Adress" required>
+        <input type="text" name="emi_zip_code" placeholder="ZIP" required>
+        <input type="text" name="emi_city" placeholder="City" required>
+        <input type="text" name="emi_state" placeholder="State" required>
+        <input type="text" name="emi_country" placeholder="Country" required>
         <input type="text" name="emi_email" placeholder="Email">
         <input type="text" name="emi_phone" placeholder="Phone">
         <br>
        <label>Receptor:</label>
-       <input type="text" name="rec_name" placeholder="Name">
-       <input type="text" name="rec_cif" placeholder="CIF">
-       <input type="text" name="rec_adress" placeholder="Adress">
-       <input type="text" name="rec_zip_code" placeholder="ZIP">
-       <input type="text" name="rec_city" placeholder="City">
-       <input type="text" name="rec_state" placeholder="State">
-       <input type="text" name="rec_country" placeholder="Country">
-       <input type="text" name="rec_email" placeholder="Email">
+       <input type="text" name="rec_name" placeholder="Name" required>
+       <input type="text" name="rec_cif" placeholder="CIF" required>
+       <input type="text" name="rec_adress" placeholder="Adress" required>
+       <input type="text" name="rec_zip_code" placeholder="ZIP" required>
+       <input type="text" name="rec_city" placeholder="City" required>
+       <input type="text" name="rec_state" placeholder="State" required>
+       <input type="text" name="rec_country" placeholder="Country" required>
+       <input type="text" name="rec_email" placeholder="Email" required>
        <input type="text" name="rec_phone" placeholder="Phone">
 <br>
     </div>
