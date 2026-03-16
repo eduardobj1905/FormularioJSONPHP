@@ -3,6 +3,7 @@ if($_SERVER['REQUEST_METHOD']==='POST'){
     $uuid = rand(1,100);
     $fechaEmision = date('d/m/Y');
     $fechaFinCobro = date('d/m/Y',strtotime('+1 month'));
+
     //Recogemos los datos del emisor y del receptor
     $emisor = [
         "nombre" => $_POST['emi_name'] ?? '',
@@ -81,7 +82,11 @@ if($_SERVER['REQUEST_METHOD']==='POST'){
     ];
 $json_data = json_encode($factura, JSON_PRETTY_PRINT | JSON_UNESCAPED_UNICODE);
     $filename = "factura_" . $uuid . "_" . ($receptor['nombre']) . ".json";
-
+    
+    $rutaCarpeta = "facturas_guardadas";
+    if (!file_exists($rutaCarpeta)) {
+        mkdir($rutaCarpeta, 0777, true);
+    }
     
    if (file_put_contents("facturas_guardadas/" . $filename, $json_data)) {
         echo "<script>alert('Factura $uuid generada');</script>";
