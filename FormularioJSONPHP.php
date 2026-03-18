@@ -1,8 +1,12 @@
 <?php
+$mostrarPreview = false;
 if($_SERVER['REQUEST_METHOD']==='POST'){
+    $mostrarPreview = true;
     $uuid = rand(1,100);
     $fechaEmision = date('d/m/Y');
     $fechaFinCobro = date('d/m/Y',strtotime('+1 month'));
+    // Recogemos la posición del QR
+    $posicionQR = $_POST['qr'] ?? 'left';
 
     //Recogemos los datos del emisor y del receptor
     $emisor = [
@@ -63,6 +67,7 @@ if($_SERVER['REQUEST_METHOD']==='POST'){
             ];
         }
     }
+    $totalFinal = $totalSinImpuestos + $totalImpuestos;
     // Estructura Final
     $factura = [
         $uuid => [
@@ -73,17 +78,18 @@ if($_SERVER['REQUEST_METHOD']==='POST'){
             "totales" => [
                 "totalSinImpuestos" => number_format($totalSinImpuestos, 2, '.', ''),
                 "cantidadDelImpuesto" => number_format($totalImpuestos, 2, '.', ''),
-                "totalFinal" => number_format($totalSinImpuestos + $totalImpuestos, 2, '.', '')
+                "totalFinal" => number_format($totalFinal, 2, '.', '')
             ],
             "fecha_emision" => $fechaEmision,
             "fecha_fin_cobro" => $fechaFinCobro,
             "estado_factura" => rand(1, 5)
         ]
     ];
-
+    //Introducido
+    $facturaHash = md5(json_encode($factura) . $uuid);
 
 $json_data = json_encode($factura, JSON_PRETTY_PRINT | JSON_UNESCAPED_UNICODE);
-    $filename = "factura_" . $uuid . "_" . ($receptor['nombre']) . ".json";
+    $filename = "factura_" . $uuid . "_" . ($receptor['nombre_receptor']) . ".json";
 
     $archivoFacturas = "facturas_totales.json"; 
     $contenedorFacturas = "facturas_guardadas";    
@@ -115,53 +121,10 @@ $json_data = json_encode($factura, JSON_PRETTY_PRINT | JSON_UNESCAPED_UNICODE);
 <head>
     <meta charset="UTF-8">
     <title>Tarea Factura JSON</title>
-    <style>
-        body { font-family: Arial,
-             sans-serif; margin: 30px;
-              line-height: 1.6;
-            display: flex;
-            flex-direction: column;
-            align-items: center; }
-    
-    .bloque { 
-        border: 1px solid #ccc; 
-        padding: 20px; 
-        margin-bottom: 20px; 
-        width: 600px; 
-    }
-
-    h3 { margin-top: 0; color: #333; }
-    label { 
-        display: block; 
-        font-weight: bold; 
-        margin: 15px 0 5px 0; 
-        border-bottom: 1px solid #eee;
-    }
-
-    input { 
-        padding: 6px; 
-        margin: 4px 2px; 
-        border: 1px solid #999;
-        border-radius: 3px;
-    }
-
-    .bloque input[type="text"] { width: 28%; }
-
-    .fila { margin-top: 10px; display: flex; gap: 5px; }
-    .fila input { flex: 1; width: auto; }
-    .description { flex: 3; } 
-    button { 
-        margin-top: 10px; 
-        padding: 5px 15px; 
-        cursor: pointer; 
-        background: #eee; 
-        border: 1px solid #888; 
-    }
-    button:hover { background: #ddd; }
-    
-    </style>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <?php if (!$mostrarPreview): ?>
 
     <h2>Nueva Factura</h2>
 
@@ -213,10 +176,94 @@ $json_data = json_encode($factura, JSON_PRETTY_PRINT | JSON_UNESCAPED_UNICODE);
     </div>
     <button type="button" onclick="addImpuesto()">+ Añadir Impuesto</button>
 </div>
+<h3>Localizacion QR</h3>
+<div class="fila">
+                <label><input type="radio" name="qr" value="left" checked> Izquierda</label>
+                <label><input type="radio" name="qr" value="center"> Centro</label>
+                <label><input type="radio" name="qr" value="right"> Derecha</label>
+            </div>
     <br>
 <button type="submit">
     GENERAR FACTURA
-</button>    </form>
+</button>    
+</form>
+   <?php else: ?>
+    <div class="preview-factura"> 
+    <div class="qr-container qr-<?php echo $posicionQR; ?>">
+        <div style="margin-bottom: 5px;font-weight: bold;">
+           ID FACTURA: #<?php echo $uuid; ?>
+        </div>
+        <img src="03243d254b92656af15137a7dd0bd76a.png" alt="QR" style="width: 100px; height: auto; border: 1px solid #eee; padding: 5px;">
+    </div>
+
+        <div class="datos-cabecera">
+            <div class="info-caja">
+                <strong>EMISOR</strong><br>
+                <span style="font-size: 1.1em; font-weight: bold;"><?php echo $emisor['nombre_emisor']; ?></span><br>
+                CIF: <?php echo $emisor['cif_emisor']; ?><br>
+                <?php echo $emisor['direccion_emisor']; ?><br>
+                <?php echo $emisor['zip_emisor'] . " " . $emisor['ciudad_emisor']; ?><br>
+                <?php echo $emisor['estado_emisor'] . ", " . $emisor['pais_emisor']; ?><br>
+                <?php if($emisor['email_emisor']) echo "Email: " . $emisor['email_emisor'] . "<br>"; ?>
+                <?php if($emisor['telefono_emisor']) echo "Tel: " . $emisor['telefono_emisor']; ?>
+            </div>
+            
+            <div class="info-caja" style="text-align: right;">
+                <strong>RECEPTOR</strong><br>
+                <span style="font-size: 1.1em; font-weight: bold;"><?php echo $receptor['nombre_receptor']; ?></span><br>
+                CIF: <?php echo $receptor['cif_receptor']; ?><br>
+                <?php echo $receptor['direccion_receptor']; ?><br>
+                <?php echo $receptor['zip_receptor'] . " " . $receptor['ciudad_receptor']; ?><br>
+                <?php echo $receptor['estado_receptor'] . ", " . $receptor['pais_receptor']; ?><br>
+                <?php echo "Email: " . $receptor['email_receptor']; ?><br>
+                <?php if($receptor['telefono_receptor']) echo "Tel: " . $receptor['telefono_receptor']; ?>
+            </div>
+        </div>
+        <div style="width: 100%; margin-bottom: 20px; border-top: 1px solid #eee; padding-top: 10px; display: flex; justify-content: space-between; font-size: 0.9em;">
+    <div>
+        <strong>Fecha de Emisión:</strong> <?php echo $fechaEmision; ?>
+    </div>
+    <div style="color: #207ac4; font-weight: bold;">
+        <strong>Fecha Límite de Pago:</strong> <?php echo $fechaFinCobro; ?>
+    </div>
+</div>
+
+        <table class="tabla-preview">
+            <thead>
+                <tr>
+                    <th>Descripción</th>
+                    <th style="text-align: center;">Cant.</th>
+                    <th style="text-align: right;">Precio</th>
+                    <th style="text-align: right;">Subtotal</th>
+                </tr>
+            </thead>
+            <tbody>
+                <?php foreach($conceptos as $c): ?>
+                <tr>
+                    <td><?php echo $c['descripcion']; ?></td>
+                    <td style="text-align: center;"><?php echo $c['cantidad']; ?></td>
+                    <td style="text-align: right;"><?php echo number_format($c['precio'], 2); ?>€</td>
+                    <td style="text-align: right; font-weight: bold;"><?php echo $c['subtotal']; ?>€</td>
+                </tr>
+                <?php endforeach; ?>
+            </tbody>
+        </table>
+
+        <div class="totales-caja">
+            <p>Subtotal base: <?php echo number_format($totalSinImpuestos, 2); ?>€</p>
+            <p>Impuestos totales: <?php echo number_format($totalImpuestos, 2); ?>€</p>
+            <h2>TOTAL FACTURA: <?php echo number_format($totalFinal, 2); ?>€</h2>
+        </div>
+
+        <div class="hash-discreto">
+            HASH SEGURIDAD: <?php echo $facturaHash; ?>
+    </div>
+    
+    <br>
+    <button onclick="window.location.href=window.location.href" style="padding: 10px 20px">
+        ← Crear otra factura
+    </button>
+    <?php endif; ?>
 
     <script>
 

@@ -1,154 +1,919 @@
 {
-    "66": {
+    "94": {
         "emisor": {
-            "nombre": "e",
-            "cif": "e",
-            "direccion": "e",
-            "zip": "e",
-            "ciudad": "e",
-            "estado": "e",
-            "pais": "e",
-            "email": "ee",
-            "telefono": ""
+            "nombre_emisor": "EDUARDO",
+            "cif_emisor": "188",
+            "direccion_emisor": "ALCORCON",
+            "zip_emisor": "28981",
+            "ciudad_emisor": "Parla",
+            "estado_emisor": "Madrid",
+            "pais_emisor": "España",
+            "email_emisor": "eduardobernal1502@gmail.com",
+            "telefono_emisor": "611465090"
         },
         "receptor": {
-            "nombre": "e",
-            "cif": "e",
-            "direccion": "e",
-            "zip": "e",
-            "ciudad": "e",
-            "estado": "e",
-            "pais": "e",
-            "email": "e",
-            "telefono": "e"
-        },
-        "conceptos": [
-            {
-                "descripcion": "e",
-                "precio": 8,
-                "cantidad": 8,
-                "subtotal": "64.00"
-            }
-        ],
-        "impuestos": [
-            {
-                "nombre": "ii",
-                "porcentaje": 8,
-                "cantidadCalculada": "5.12"
-            }
-        ],
-        "totales": {
-            "totalSinImpuestos": "64.00",
-            "cantidadDelImpuesto": "5.12",
-            "totalFinal": "69.12"
-        },
-        "fecha_emision": "16\/03\/2026",
-        "fecha_fin_cobro": "16\/04\/2026",
-        "estado_factura": 1
-    },
-    "32": {
-        "emisor": {
-            "nombre": "EDUARDO",
-            "cif": "188",
-            "direccion": "ALCORCON",
-            "zip": "28981",
-            "ciudad": "Parla",
-            "estado": "Madrid",
-            "pais": "España",
-            "email": "eduardobernal1502@gmail.com",
-            "telefono": "611465090"
-        },
-        "receptor": {
-            "nombre": "PELUQUERIAS",
-            "cif": "GG",
-            "direccion": "PEÑALARA",
-            "zip": "28981",
-            "ciudad": "Parla",
-            "estado": "Madrid",
-            "pais": "España",
-            "email": "eduardobernal1502@gmail.com",
-            "telefono": "611465090"
-        },
-        "conceptos": [
-            {
-                "descripcion": "PEINE",
-                "precio": 78,
-                "cantidad": 5,
-                "subtotal": "390.00"
-            }
-        ],
-        "impuestos": [
-            {
-                "nombre": "iva",
-                "porcentaje": 8,
-                "cantidadCalculada": "31.20"
-            }
-        ],
-        "totales": {
-            "totalSinImpuestos": "390.00",
-            "cantidadDelImpuesto": "31.20",
-            "totalFinal": "421.20"
-        },
-        "fecha_emision": "17\/03\/2026",
-        "fecha_fin_cobro": "17\/04\/2026",
-        "estado_factura": 4
-    },
-    "77": {
-        "emisor": {
-            "nombre_emisor": "EDUIN",
-            "cif_emisor": "888",
-            "direccion_emisor": "ALCJR",
-            "zip_emisor": "789455",
-            "ciudad_emisor": "MADRID",
-            "estado_emisor": "MADROD",
-            "pais_emisor": "SPAIN",
-            "email_emisor": "EDUAD@CORREO.COM",
-            "telefono_emisor": "6887469"
-        },
-        "receptor": {
-            "nombre_receptor": "SERGIO",
-            "cif_receptor": "7899",
+            "nombre_receptor": "PELUQUERIAS",
+            "cif_receptor": "88",
             "direccion_receptor": "PEÑALARA",
             "zip_receptor": "28981",
-            "ciudad_receptor": "PARLA",
-            "estado_receptor": "MADRID",
-            "pais_receptor": "ESPAÑA",
-            "email_receptor": "SER@CORRE.COM",
-            "telefono_receptor": "7891556"
+            "ciudad_receptor": "Parla",
+            "estado_receptor": "Madrid",
+            "pais_receptor": "España",
+            "email_receptor": "eduardobernal1502@gmail.com",
+            "telefono_receptor": "611465090"
         },
         "conceptos": [
             {
                 "descripcion": "REFRESCO",
-                "precio": 89,
-                "cantidad": 18,
-                "subtotal": "1602.00"
+                "precio": 78,
+                "cantidad": 2,
+                "subtotal": "156.00"
             },
             {
-                "descripcion": "COMIDA",
+                "descripcion": "PEINE",
                 "precio": 12,
-                "cantidad": 32,
-                "subtotal": "384.00"
+                "cantidad": 36,
+                "subtotal": "432.00"
             }
         ],
         "impuestos": [
             {
                 "nombre_impuesto": "IVA",
-                "porcentaje": 12,
-                "cantidadCalculada": "238.32"
+                "porcentaje": 21,
+                "cantidadCalculada": "123.48"
             },
             {
                 "nombre_impuesto": "IRPF",
-                "porcentaje": 21,
-                "cantidadCalculada": "417.06"
+                "porcentaje": 12,
+                "cantidadCalculada": "70.56"
             }
         ],
         "totales": {
-            "totalSinImpuestos": "1986.00",
-            "cantidadDelImpuesto": "655.38",
-            "totalFinal": "2641.38"
+            "totalSinImpuestos": "588.00",
+            "cantidadDelImpuesto": "194.04",
+            "totalFinal": "782.04"
+        },
+        "fecha_emision": "18\/03\/2026",
+        "fecha_fin_cobro": "18\/04\/2026",
+        "estado_factura": 4
+    },
+    "84": {
+        "emisor": {
+            "nombre_emisor": "EDUARDO",
+            "cif_emisor": "188",
+            "direccion_emisor": "ALCORCON",
+            "zip_emisor": "28981",
+            "ciudad_emisor": "Parla",
+            "estado_emisor": "Madrid",
+            "pais_emisor": "España",
+            "email_emisor": "eduardobernal1502@gmail.com",
+            "telefono_emisor": "611465090"
+        },
+        "receptor": {
+            "nombre_receptor": "PELUQUERIAS",
+            "cif_receptor": "88",
+            "direccion_receptor": "PEÑALARA",
+            "zip_receptor": "28981",
+            "ciudad_receptor": "Parla",
+            "estado_receptor": "Madrid",
+            "pais_receptor": "España",
+            "email_receptor": "eduardobernal1502@gmail.com",
+            "telefono_receptor": "611465090"
+        },
+        "conceptos": [
+            {
+                "descripcion": "REFRESCO",
+                "precio": 78,
+                "cantidad": 2,
+                "subtotal": "156.00"
+            },
+            {
+                "descripcion": "PEINE",
+                "precio": 12,
+                "cantidad": 36,
+                "subtotal": "432.00"
+            }
+        ],
+        "impuestos": [
+            {
+                "nombre_impuesto": "IVA",
+                "porcentaje": 21,
+                "cantidadCalculada": "123.48"
+            },
+            {
+                "nombre_impuesto": "IRPF",
+                "porcentaje": 12,
+                "cantidadCalculada": "70.56"
+            }
+        ],
+        "totales": {
+            "totalSinImpuestos": "588.00",
+            "cantidadDelImpuesto": "194.04",
+            "totalFinal": "782.04"
+        },
+        "fecha_emision": "18\/03\/2026",
+        "fecha_fin_cobro": "18\/04\/2026",
+        "estado_factura": 4
+    },
+    "33": {
+        "emisor": {
+            "nombre_emisor": "EDUARDO",
+            "cif_emisor": "188",
+            "direccion_emisor": "ALCORCON",
+            "zip_emisor": "28981",
+            "ciudad_emisor": "Parla",
+            "estado_emisor": "Madrid",
+            "pais_emisor": "España",
+            "email_emisor": "eduardobernal1502@gmail.com",
+            "telefono_emisor": "611465090"
+        },
+        "receptor": {
+            "nombre_receptor": "PELUQUERIAS",
+            "cif_receptor": "88",
+            "direccion_receptor": "PEÑALARA",
+            "zip_receptor": "28981",
+            "ciudad_receptor": "Parla",
+            "estado_receptor": "Madrid",
+            "pais_receptor": "España",
+            "email_receptor": "eduardobernal1502@gmail.com",
+            "telefono_receptor": "611465090"
+        },
+        "conceptos": [
+            {
+                "descripcion": "REFRESCO",
+                "precio": 78,
+                "cantidad": 2,
+                "subtotal": "156.00"
+            },
+            {
+                "descripcion": "PEINE",
+                "precio": 12,
+                "cantidad": 36,
+                "subtotal": "432.00"
+            }
+        ],
+        "impuestos": [
+            {
+                "nombre_impuesto": "IVA",
+                "porcentaje": 21,
+                "cantidadCalculada": "123.48"
+            },
+            {
+                "nombre_impuesto": "IRPF",
+                "porcentaje": 12,
+                "cantidadCalculada": "70.56"
+            }
+        ],
+        "totales": {
+            "totalSinImpuestos": "588.00",
+            "cantidadDelImpuesto": "194.04",
+            "totalFinal": "782.04"
+        },
+        "fecha_emision": "18\/03\/2026",
+        "fecha_fin_cobro": "18\/04\/2026",
+        "estado_factura": 4
+    },
+    "71": {
+        "emisor": {
+            "nombre_emisor": "EDUARDO",
+            "cif_emisor": "188",
+            "direccion_emisor": "ALCORCON",
+            "zip_emisor": "28981",
+            "ciudad_emisor": "Parla",
+            "estado_emisor": "Madrid",
+            "pais_emisor": "España",
+            "email_emisor": "eduardobernal1502@gmail.com",
+            "telefono_emisor": "611465090"
+        },
+        "receptor": {
+            "nombre_receptor": "PELUQUERIAS",
+            "cif_receptor": "88",
+            "direccion_receptor": "PEÑALARA",
+            "zip_receptor": "28981",
+            "ciudad_receptor": "Parla",
+            "estado_receptor": "Madrid",
+            "pais_receptor": "España",
+            "email_receptor": "eduardobernal1502@gmail.com",
+            "telefono_receptor": "611465090"
+        },
+        "conceptos": [
+            {
+                "descripcion": "REFRESCO",
+                "precio": 78,
+                "cantidad": 2,
+                "subtotal": "156.00"
+            },
+            {
+                "descripcion": "PEINE",
+                "precio": 12,
+                "cantidad": 36,
+                "subtotal": "432.00"
+            }
+        ],
+        "impuestos": [
+            {
+                "nombre_impuesto": "IVA",
+                "porcentaje": 21,
+                "cantidadCalculada": "123.48"
+            },
+            {
+                "nombre_impuesto": "IRPF",
+                "porcentaje": 12,
+                "cantidadCalculada": "70.56"
+            }
+        ],
+        "totales": {
+            "totalSinImpuestos": "588.00",
+            "cantidadDelImpuesto": "194.04",
+            "totalFinal": "782.04"
+        },
+        "fecha_emision": "18\/03\/2026",
+        "fecha_fin_cobro": "18\/04\/2026",
+        "estado_factura": 3
+    },
+    "8": {
+        "emisor": {
+            "nombre_emisor": "EDUARDO",
+            "cif_emisor": "188",
+            "direccion_emisor": "ALCORCON",
+            "zip_emisor": "28981",
+            "ciudad_emisor": "Parla",
+            "estado_emisor": "Madrid",
+            "pais_emisor": "España",
+            "email_emisor": "eduardobernal1502@gmail.com",
+            "telefono_emisor": "611465090"
+        },
+        "receptor": {
+            "nombre_receptor": "PELUQUERIAS",
+            "cif_receptor": "88",
+            "direccion_receptor": "PEÑALARA",
+            "zip_receptor": "28981",
+            "ciudad_receptor": "Parla",
+            "estado_receptor": "Madrid",
+            "pais_receptor": "España",
+            "email_receptor": "eduardobernal1502@gmail.com",
+            "telefono_receptor": "611465090"
+        },
+        "conceptos": [
+            {
+                "descripcion": "REFRESCO",
+                "precio": 78,
+                "cantidad": 2,
+                "subtotal": "156.00"
+            },
+            {
+                "descripcion": "PEINE",
+                "precio": 12,
+                "cantidad": 36,
+                "subtotal": "432.00"
+            }
+        ],
+        "impuestos": [
+            {
+                "nombre_impuesto": "IVA",
+                "porcentaje": 21,
+                "cantidadCalculada": "123.48"
+            },
+            {
+                "nombre_impuesto": "IRPF",
+                "porcentaje": 12,
+                "cantidadCalculada": "70.56"
+            }
+        ],
+        "totales": {
+            "totalSinImpuestos": "588.00",
+            "cantidadDelImpuesto": "194.04",
+            "totalFinal": "782.04"
         },
         "fecha_emision": "18\/03\/2026",
         "fecha_fin_cobro": "18\/04\/2026",
         "estado_factura": 5
+    },
+    "44": {
+        "emisor": {
+            "nombre_emisor": "EDUARDO",
+            "cif_emisor": "188",
+            "direccion_emisor": "ALCORCON",
+            "zip_emisor": "28981",
+            "ciudad_emisor": "Parla",
+            "estado_emisor": "Madrid",
+            "pais_emisor": "España",
+            "email_emisor": "eduardobernal1502@gmail.com",
+            "telefono_emisor": "611465090"
+        },
+        "receptor": {
+            "nombre_receptor": "PELUQUERIAS",
+            "cif_receptor": "88",
+            "direccion_receptor": "PEÑALARA",
+            "zip_receptor": "28981",
+            "ciudad_receptor": "Parla",
+            "estado_receptor": "Madrid",
+            "pais_receptor": "España",
+            "email_receptor": "eduardobernal1502@gmail.com",
+            "telefono_receptor": "611465090"
+        },
+        "conceptos": [
+            {
+                "descripcion": "REFRESCO",
+                "precio": 78,
+                "cantidad": 2,
+                "subtotal": "156.00"
+            },
+            {
+                "descripcion": "PEINE",
+                "precio": 12,
+                "cantidad": 36,
+                "subtotal": "432.00"
+            }
+        ],
+        "impuestos": [
+            {
+                "nombre_impuesto": "IVA",
+                "porcentaje": 21,
+                "cantidadCalculada": "123.48"
+            },
+            {
+                "nombre_impuesto": "IRPF",
+                "porcentaje": 12,
+                "cantidadCalculada": "70.56"
+            }
+        ],
+        "totales": {
+            "totalSinImpuestos": "588.00",
+            "cantidadDelImpuesto": "194.04",
+            "totalFinal": "782.04"
+        },
+        "fecha_emision": "18\/03\/2026",
+        "fecha_fin_cobro": "18\/04\/2026",
+        "estado_factura": 2
+    },
+    "57": {
+        "emisor": {
+            "nombre_emisor": "EDUARDO",
+            "cif_emisor": "188",
+            "direccion_emisor": "ALCORCON",
+            "zip_emisor": "28981",
+            "ciudad_emisor": "Parla",
+            "estado_emisor": "Madrid",
+            "pais_emisor": "España",
+            "email_emisor": "eduardobernal1502@gmail.com",
+            "telefono_emisor": "611465090"
+        },
+        "receptor": {
+            "nombre_receptor": "PELUQUERIAS",
+            "cif_receptor": "88",
+            "direccion_receptor": "PEÑALARA",
+            "zip_receptor": "28981",
+            "ciudad_receptor": "Parla",
+            "estado_receptor": "Madrid",
+            "pais_receptor": "España",
+            "email_receptor": "eduardobernal1502@gmail.com",
+            "telefono_receptor": "611465090"
+        },
+        "conceptos": [
+            {
+                "descripcion": "REFRESCO",
+                "precio": 78,
+                "cantidad": 2,
+                "subtotal": "156.00"
+            },
+            {
+                "descripcion": "PEINE",
+                "precio": 12,
+                "cantidad": 36,
+                "subtotal": "432.00"
+            }
+        ],
+        "impuestos": [
+            {
+                "nombre_impuesto": "IVA",
+                "porcentaje": 21,
+                "cantidadCalculada": "123.48"
+            },
+            {
+                "nombre_impuesto": "IRPF",
+                "porcentaje": 12,
+                "cantidadCalculada": "70.56"
+            }
+        ],
+        "totales": {
+            "totalSinImpuestos": "588.00",
+            "cantidadDelImpuesto": "194.04",
+            "totalFinal": "782.04"
+        },
+        "fecha_emision": "18\/03\/2026",
+        "fecha_fin_cobro": "18\/04\/2026",
+        "estado_factura": 5
+    },
+    "50": {
+        "emisor": {
+            "nombre_emisor": "EDUARDO",
+            "cif_emisor": "188",
+            "direccion_emisor": "ALCORCON",
+            "zip_emisor": "28981",
+            "ciudad_emisor": "Parla",
+            "estado_emisor": "Madrid",
+            "pais_emisor": "España",
+            "email_emisor": "eduardobernal1502@gmail.com",
+            "telefono_emisor": "611465090"
+        },
+        "receptor": {
+            "nombre_receptor": "PELUQUERIAS",
+            "cif_receptor": "88",
+            "direccion_receptor": "PEÑALARA",
+            "zip_receptor": "28981",
+            "ciudad_receptor": "Parla",
+            "estado_receptor": "Madrid",
+            "pais_receptor": "España",
+            "email_receptor": "eduardobernal1502@gmail.com",
+            "telefono_receptor": "611465090"
+        },
+        "conceptos": [
+            {
+                "descripcion": "REFRESCO",
+                "precio": 78,
+                "cantidad": 2,
+                "subtotal": "156.00"
+            },
+            {
+                "descripcion": "PEINE",
+                "precio": 12,
+                "cantidad": 36,
+                "subtotal": "432.00"
+            }
+        ],
+        "impuestos": [
+            {
+                "nombre_impuesto": "IVA",
+                "porcentaje": 21,
+                "cantidadCalculada": "123.48"
+            },
+            {
+                "nombre_impuesto": "IRPF",
+                "porcentaje": 12,
+                "cantidadCalculada": "70.56"
+            }
+        ],
+        "totales": {
+            "totalSinImpuestos": "588.00",
+            "cantidadDelImpuesto": "194.04",
+            "totalFinal": "782.04"
+        },
+        "fecha_emision": "18\/03\/2026",
+        "fecha_fin_cobro": "18\/04\/2026",
+        "estado_factura": 3
+    },
+    "81": {
+        "emisor": {
+            "nombre_emisor": "EDUARDO",
+            "cif_emisor": "188",
+            "direccion_emisor": "ALCORCON",
+            "zip_emisor": "28981",
+            "ciudad_emisor": "Parla",
+            "estado_emisor": "Madrid",
+            "pais_emisor": "España",
+            "email_emisor": "eduardobernal1502@gmail.com",
+            "telefono_emisor": "611465090"
+        },
+        "receptor": {
+            "nombre_receptor": "PELUQUERIAS",
+            "cif_receptor": "88",
+            "direccion_receptor": "PEÑALARA",
+            "zip_receptor": "28981",
+            "ciudad_receptor": "Parla",
+            "estado_receptor": "Madrid",
+            "pais_receptor": "España",
+            "email_receptor": "eduardobernal1502@gmail.com",
+            "telefono_receptor": "611465090"
+        },
+        "conceptos": [
+            {
+                "descripcion": "REFRESCO",
+                "precio": 78,
+                "cantidad": 2,
+                "subtotal": "156.00"
+            },
+            {
+                "descripcion": "PEINE",
+                "precio": 12,
+                "cantidad": 36,
+                "subtotal": "432.00"
+            }
+        ],
+        "impuestos": [
+            {
+                "nombre_impuesto": "IVA",
+                "porcentaje": 21,
+                "cantidadCalculada": "123.48"
+            },
+            {
+                "nombre_impuesto": "IRPF",
+                "porcentaje": 12,
+                "cantidadCalculada": "70.56"
+            }
+        ],
+        "totales": {
+            "totalSinImpuestos": "588.00",
+            "cantidadDelImpuesto": "194.04",
+            "totalFinal": "782.04"
+        },
+        "fecha_emision": "18\/03\/2026",
+        "fecha_fin_cobro": "18\/04\/2026",
+        "estado_factura": 3
+    },
+    "48": {
+        "emisor": {
+            "nombre_emisor": "EDUARDO",
+            "cif_emisor": "188",
+            "direccion_emisor": "ALCORCON",
+            "zip_emisor": "28981",
+            "ciudad_emisor": "Parla",
+            "estado_emisor": "Madrid",
+            "pais_emisor": "España",
+            "email_emisor": "eduardobernal1502@gmail.com",
+            "telefono_emisor": "611465090"
+        },
+        "receptor": {
+            "nombre_receptor": "PELUQUERIAS",
+            "cif_receptor": "88",
+            "direccion_receptor": "PEÑALARA",
+            "zip_receptor": "28981",
+            "ciudad_receptor": "Parla",
+            "estado_receptor": "Madrid",
+            "pais_receptor": "España",
+            "email_receptor": "eduardobernal1502@gmail.com",
+            "telefono_receptor": "611465090"
+        },
+        "conceptos": [
+            {
+                "descripcion": "REFRESCO",
+                "precio": 78,
+                "cantidad": 2,
+                "subtotal": "156.00"
+            },
+            {
+                "descripcion": "PEINE",
+                "precio": 12,
+                "cantidad": 36,
+                "subtotal": "432.00"
+            }
+        ],
+        "impuestos": [
+            {
+                "nombre_impuesto": "IVA",
+                "porcentaje": 21,
+                "cantidadCalculada": "123.48"
+            },
+            {
+                "nombre_impuesto": "IRPF",
+                "porcentaje": 12,
+                "cantidadCalculada": "70.56"
+            }
+        ],
+        "totales": {
+            "totalSinImpuestos": "588.00",
+            "cantidadDelImpuesto": "194.04",
+            "totalFinal": "782.04"
+        },
+        "fecha_emision": "18\/03\/2026",
+        "fecha_fin_cobro": "18\/04\/2026",
+        "estado_factura": 2
+    },
+    "45": {
+        "emisor": {
+            "nombre_emisor": "EDUARDO",
+            "cif_emisor": "188",
+            "direccion_emisor": "ALCORCON",
+            "zip_emisor": "28981",
+            "ciudad_emisor": "Parla",
+            "estado_emisor": "Madrid",
+            "pais_emisor": "España",
+            "email_emisor": "eduardobernal1502@gmail.com",
+            "telefono_emisor": "611465090"
+        },
+        "receptor": {
+            "nombre_receptor": "PELUQUERIAS",
+            "cif_receptor": "88",
+            "direccion_receptor": "PEÑALARA",
+            "zip_receptor": "28981",
+            "ciudad_receptor": "Parla",
+            "estado_receptor": "Madrid",
+            "pais_receptor": "España",
+            "email_receptor": "eduardobernal1502@gmail.com",
+            "telefono_receptor": "611465090"
+        },
+        "conceptos": [
+            {
+                "descripcion": "REFRESCO",
+                "precio": 78,
+                "cantidad": 2,
+                "subtotal": "156.00"
+            },
+            {
+                "descripcion": "PEINE",
+                "precio": 12,
+                "cantidad": 36,
+                "subtotal": "432.00"
+            }
+        ],
+        "impuestos": [
+            {
+                "nombre_impuesto": "IVA",
+                "porcentaje": 21,
+                "cantidadCalculada": "123.48"
+            },
+            {
+                "nombre_impuesto": "IRPF",
+                "porcentaje": 12,
+                "cantidadCalculada": "70.56"
+            }
+        ],
+        "totales": {
+            "totalSinImpuestos": "588.00",
+            "cantidadDelImpuesto": "194.04",
+            "totalFinal": "782.04"
+        },
+        "fecha_emision": "18\/03\/2026",
+        "fecha_fin_cobro": "18\/04\/2026",
+        "estado_factura": 3
+    },
+    "40": {
+        "emisor": {
+            "nombre_emisor": "EDUARDO",
+            "cif_emisor": "188",
+            "direccion_emisor": "ALCORCON",
+            "zip_emisor": "28981",
+            "ciudad_emisor": "Parla",
+            "estado_emisor": "Madrid",
+            "pais_emisor": "España",
+            "email_emisor": "eduardobernal1502@gmail.com",
+            "telefono_emisor": "611465090"
+        },
+        "receptor": {
+            "nombre_receptor": "PELUQUERIAS",
+            "cif_receptor": "88",
+            "direccion_receptor": "PEÑALARA",
+            "zip_receptor": "28981",
+            "ciudad_receptor": "Parla",
+            "estado_receptor": "Madrid",
+            "pais_receptor": "España",
+            "email_receptor": "eduardobernal1502@gmail.com",
+            "telefono_receptor": "611465090"
+        },
+        "conceptos": [
+            {
+                "descripcion": "REFRESCO",
+                "precio": 78,
+                "cantidad": 2,
+                "subtotal": "156.00"
+            },
+            {
+                "descripcion": "PEINE",
+                "precio": 12,
+                "cantidad": 36,
+                "subtotal": "432.00"
+            }
+        ],
+        "impuestos": [
+            {
+                "nombre_impuesto": "IVA",
+                "porcentaje": 21,
+                "cantidadCalculada": "123.48"
+            },
+            {
+                "nombre_impuesto": "IRPF",
+                "porcentaje": 12,
+                "cantidadCalculada": "70.56"
+            }
+        ],
+        "totales": {
+            "totalSinImpuestos": "588.00",
+            "cantidadDelImpuesto": "194.04",
+            "totalFinal": "782.04"
+        },
+        "fecha_emision": "18\/03\/2026",
+        "fecha_fin_cobro": "18\/04\/2026",
+        "estado_factura": 2
+    },
+    "42": {
+        "emisor": {
+            "nombre_emisor": "EDUARDO",
+            "cif_emisor": "188",
+            "direccion_emisor": "ALCORCON",
+            "zip_emisor": "28981",
+            "ciudad_emisor": "Parla",
+            "estado_emisor": "Madrid",
+            "pais_emisor": "España",
+            "email_emisor": "eduardobernal1502@gmail.com",
+            "telefono_emisor": "611465090"
+        },
+        "receptor": {
+            "nombre_receptor": "PELUQUERIAS",
+            "cif_receptor": "88",
+            "direccion_receptor": "PEÑALARA",
+            "zip_receptor": "28981",
+            "ciudad_receptor": "Parla",
+            "estado_receptor": "Madrid",
+            "pais_receptor": "España",
+            "email_receptor": "eduardobernal1502@gmail.com",
+            "telefono_receptor": "611465090"
+        },
+        "conceptos": [
+            {
+                "descripcion": "REFRESCO",
+                "precio": 78,
+                "cantidad": 2,
+                "subtotal": "156.00"
+            },
+            {
+                "descripcion": "PEINE",
+                "precio": 12,
+                "cantidad": 36,
+                "subtotal": "432.00"
+            }
+        ],
+        "impuestos": [
+            {
+                "nombre_impuesto": "IVA",
+                "porcentaje": 21,
+                "cantidadCalculada": "123.48"
+            },
+            {
+                "nombre_impuesto": "IRPF",
+                "porcentaje": 12,
+                "cantidadCalculada": "70.56"
+            }
+        ],
+        "totales": {
+            "totalSinImpuestos": "588.00",
+            "cantidadDelImpuesto": "194.04",
+            "totalFinal": "782.04"
+        },
+        "fecha_emision": "18\/03\/2026",
+        "fecha_fin_cobro": "18\/04\/2026",
+        "estado_factura": 1
+    },
+    "34": {
+        "emisor": {
+            "nombre_emisor": "EDUARDO",
+            "cif_emisor": "188",
+            "direccion_emisor": "ALCORCON",
+            "zip_emisor": "28981",
+            "ciudad_emisor": "Parla",
+            "estado_emisor": "Madrid",
+            "pais_emisor": "España",
+            "email_emisor": "eduardobernal1502@gmail.com",
+            "telefono_emisor": "611465090"
+        },
+        "receptor": {
+            "nombre_receptor": "PELUQUERIAS",
+            "cif_receptor": "88",
+            "direccion_receptor": "PEÑALARA",
+            "zip_receptor": "28981",
+            "ciudad_receptor": "Parla",
+            "estado_receptor": "Madrid",
+            "pais_receptor": "España",
+            "email_receptor": "eduardobernal1502@gmail.com",
+            "telefono_receptor": "611465090"
+        },
+        "conceptos": [
+            {
+                "descripcion": "REFRESCO",
+                "precio": 78,
+                "cantidad": 2,
+                "subtotal": "156.00"
+            },
+            {
+                "descripcion": "PEINE",
+                "precio": 12,
+                "cantidad": 36,
+                "subtotal": "432.00"
+            }
+        ],
+        "impuestos": [
+            {
+                "nombre_impuesto": "IVA",
+                "porcentaje": 21,
+                "cantidadCalculada": "123.48"
+            },
+            {
+                "nombre_impuesto": "IRPF",
+                "porcentaje": 12,
+                "cantidadCalculada": "70.56"
+            }
+        ],
+        "totales": {
+            "totalSinImpuestos": "588.00",
+            "cantidadDelImpuesto": "194.04",
+            "totalFinal": "782.04"
+        },
+        "fecha_emision": "18\/03\/2026",
+        "fecha_fin_cobro": "18\/04\/2026",
+        "estado_factura": 3
+    },
+    "21": {
+        "emisor": {
+            "nombre_emisor": "EDUARDO",
+            "cif_emisor": "188",
+            "direccion_emisor": "ALCORCON",
+            "zip_emisor": "28981",
+            "ciudad_emisor": "Parla",
+            "estado_emisor": "Madrid",
+            "pais_emisor": "España",
+            "email_emisor": "eduardobernal1502@gmail.com",
+            "telefono_emisor": "611465090"
+        },
+        "receptor": {
+            "nombre_receptor": "PELUQUERIAS",
+            "cif_receptor": "88",
+            "direccion_receptor": "PEÑALARA",
+            "zip_receptor": "28981",
+            "ciudad_receptor": "Parla",
+            "estado_receptor": "Madrid",
+            "pais_receptor": "España",
+            "email_receptor": "eduardobernal1502@gmail.com",
+            "telefono_receptor": "611465090"
+        },
+        "conceptos": [
+            {
+                "descripcion": "REFRESCO",
+                "precio": 78,
+                "cantidad": 2,
+                "subtotal": "156.00"
+            },
+            {
+                "descripcion": "PEINE",
+                "precio": 12,
+                "cantidad": 36,
+                "subtotal": "432.00"
+            }
+        ],
+        "impuestos": [
+            {
+                "nombre_impuesto": "IVA",
+                "porcentaje": 21,
+                "cantidadCalculada": "123.48"
+            },
+            {
+                "nombre_impuesto": "IRPF",
+                "porcentaje": 12,
+                "cantidadCalculada": "70.56"
+            }
+        ],
+        "totales": {
+            "totalSinImpuestos": "588.00",
+            "cantidadDelImpuesto": "194.04",
+            "totalFinal": "782.04"
+        },
+        "fecha_emision": "18\/03\/2026",
+        "fecha_fin_cobro": "18\/04\/2026",
+        "estado_factura": 4
+    },
+    "89": {
+        "emisor": {
+            "nombre_emisor": "EDUARDO",
+            "cif_emisor": "188",
+            "direccion_emisor": "ALCORCON",
+            "zip_emisor": "28981",
+            "ciudad_emisor": "Parla",
+            "estado_emisor": "Madrid",
+            "pais_emisor": "España",
+            "email_emisor": "eduardobernal1502@gmail.com",
+            "telefono_emisor": "611465090"
+        },
+        "receptor": {
+            "nombre_receptor": "PELUQUERIAS",
+            "cif_receptor": "88",
+            "direccion_receptor": "PEÑALARA",
+            "zip_receptor": "28981",
+            "ciudad_receptor": "Parla",
+            "estado_receptor": "Madrid",
+            "pais_receptor": "España",
+            "email_receptor": "eduardobernal1502@gmail.com",
+            "telefono_receptor": "611465090"
+        },
+        "conceptos": [
+            {
+                "descripcion": "REFRESCO",
+                "precio": 78,
+                "cantidad": 2,
+                "subtotal": "156.00"
+            }
+        ],
+        "impuestos": [
+            {
+                "nombre_impuesto": "IVA",
+                "porcentaje": 21,
+                "cantidadCalculada": "32.76"
+            }
+        ],
+        "totales": {
+            "totalSinImpuestos": "156.00",
+            "cantidadDelImpuesto": "32.76",
+            "totalFinal": "188.76"
+        },
+        "fecha_emision": "18\/03\/2026",
+        "fecha_fin_cobro": "18\/04\/2026",
+        "estado_factura": 1
     }
 }
