@@ -17,7 +17,7 @@ if ($campo) {
     //Recorremos toda la factura
     foreach ($factura as $bloque => $contenido) {
         //Buscamos el campo en el primer nivel
-        if ($bloque == $campo && !is_array($contenido)) {
+        if ($bloqu == $campo && !is_array($contenido)) {
             $resultados[] = $contenido;
         }
         //Entramos dentro de una seccion
