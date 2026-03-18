@@ -6,27 +6,27 @@ if($_SERVER['REQUEST_METHOD']==='POST'){
 
     //Recogemos los datos del emisor y del receptor
     $emisor = [
-        "nombre" => $_POST['emi_name'] ?? '',
-        "cif" => $_POST['emi_cif'] ?? '',
-        "direccion" => $_POST['emi_adress'] ?? '',
-        "zip" => $_POST['emi_zip_code'] ?? '',
-        "ciudad" => $_POST['emi_city'] ?? '',
-        "estado" => $_POST['emi_state'] ?? '',
-        "pais" => $_POST['emi_country'] ?? '',
-        "email" => $_POST['emi_email'] ?? '',
-        "telefono" => $_POST['emi_phone'] ?? ''
+        "nombre_emisor" => $_POST['emi_name'] ?? '',
+        "cif_emisor" => $_POST['emi_cif'] ?? '',
+        "direccion_emisor" => $_POST['emi_adress'] ?? '',
+        "zip_emisor" => $_POST['emi_zip_code'] ?? '',
+        "ciudad_emisor" => $_POST['emi_city'] ?? '',
+        "estado_emisor" => $_POST['emi_state'] ?? '',
+        "pais_emisor" => $_POST['emi_country'] ?? '',
+        "email_emisor" => $_POST['emi_email'] ?? '',
+        "telefono_emisor" => $_POST['emi_phone'] ?? ''
     ];
 
     $receptor = [
-        "nombre" => $_POST['rec_name'] ?? '',
-        "cif" => $_POST['rec_cif'] ?? '',
-        "direccion" => $_POST['rec_adress'] ?? '',
-        "zip" => $_POST['rec_zip_code'] ?? '',
-        "ciudad" => $_POST['rec_city'] ?? '',
-        "estado" => $_POST['rec_state'] ?? '',
-        "pais" => $_POST['rec_country'] ?? '',
-        "email" => $_POST['rec_email'] ?? '',
-        "telefono" => $_POST['rec_phone'] ?? ''
+        "nombre_receptor" => $_POST['rec_name'] ?? '',
+        "cif_receptor" => $_POST['rec_cif'] ?? '',
+        "direccion_receptor" => $_POST['rec_adress'] ?? '',
+        "zip_receptor" => $_POST['rec_zip_code'] ?? '',
+        "ciudad_receptor" => $_POST['rec_city'] ?? '',
+        "estado_receptor" => $_POST['rec_state'] ?? '',
+        "pais_receptor" => $_POST['rec_country'] ?? '',
+        "email_receptor" => $_POST['rec_email'] ?? '',
+        "telefono_receptor" => $_POST['rec_phone'] ?? ''
     ];
 
     // Procesamos Conceptos
@@ -57,7 +57,7 @@ if($_SERVER['REQUEST_METHOD']==='POST'){
             $totalImpuestos += $importe;
 
             $impuestosArr[] = [
-                "nombre" => $nom,
+                "nombre_impuesto" => $nom,
                 "porcentaje" => $pct,
                 "cantidadCalculada" => number_format($importe, 2, '.', '')
             ];

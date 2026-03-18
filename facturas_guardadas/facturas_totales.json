@@ -45,5 +45,110 @@
         "fecha_emision": "16\/03\/2026",
         "fecha_fin_cobro": "16\/04\/2026",
         "estado_factura": 1
+    },
+    "32": {
+        "emisor": {
+            "nombre": "EDUARDO",
+            "cif": "188",
+            "direccion": "ALCORCON",
+            "zip": "28981",
+            "ciudad": "Parla",
+            "estado": "Madrid",
+            "pais": "España",
+            "email": "eduardobernal1502@gmail.com",
+            "telefono": "611465090"
+        },
+        "receptor": {
+            "nombre": "PELUQUERIAS",
+            "cif": "GG",
+            "direccion": "PEÑALARA",
+            "zip": "28981",
+            "ciudad": "Parla",
+            "estado": "Madrid",
+            "pais": "España",
+            "email": "eduardobernal1502@gmail.com",
+            "telefono": "611465090"
+        },
+        "conceptos": [
+            {
+                "descripcion": "PEINE",
+                "precio": 78,
+                "cantidad": 5,
+                "subtotal": "390.00"
+            }
+        ],
+        "impuestos": [
+            {
+                "nombre": "iva",
+                "porcentaje": 8,
+                "cantidadCalculada": "31.20"
+            }
+        ],
+        "totales": {
+            "totalSinImpuestos": "390.00",
+            "cantidadDelImpuesto": "31.20",
+            "totalFinal": "421.20"
+        },
+        "fecha_emision": "17\/03\/2026",
+        "fecha_fin_cobro": "17\/04\/2026",
+        "estado_factura": 4
+    },
+    "77": {
+        "emisor": {
+            "nombre_emisor": "EDUIN",
+            "cif_emisor": "888",
+            "direccion_emisor": "ALCJR",
+            "zip_emisor": "789455",
+            "ciudad_emisor": "MADRID",
+            "estado_emisor": "MADROD",
+            "pais_emisor": "SPAIN",
+            "email_emisor": "EDUAD@CORREO.COM",
+            "telefono_emisor": "6887469"
+        },
+        "receptor": {
+            "nombre_receptor": "SERGIO",
+            "cif_receptor": "7899",
+            "direccion_receptor": "PEÑALARA",
+            "zip_receptor": "28981",
+            "ciudad_receptor": "PARLA",
+            "estado_receptor": "MADRID",
+            "pais_receptor": "ESPAÑA",
+            "email_receptor": "SER@CORRE.COM",
+            "telefono_receptor": "7891556"
+        },
+        "conceptos": [
+            {
+                "descripcion": "REFRESCO",
+                "precio": 89,
+                "cantidad": 18,
+                "subtotal": "1602.00"
+            },
+            {
+                "descripcion": "COMIDA",
+                "precio": 12,
+                "cantidad": 32,
+                "subtotal": "384.00"
+            }
+        ],
+        "impuestos": [
+            {
+                "nombre_impuesto": "IVA",
+                "porcentaje": 12,
+                "cantidadCalculada": "238.32"
+            },
+            {
+                "nombre_impuesto": "IRPF",
+                "porcentaje": 21,
+                "cantidadCalculada": "417.06"
+            }
+        ],
+        "totales": {
+            "totalSinImpuestos": "1986.00",
+            "cantidadDelImpuesto": "655.38",
+            "totalFinal": "2641.38"
+        },
+        "fecha_emision": "18\/03\/2026",
+        "fecha_fin_cobro": "18\/04\/2026",
+        "estado_factura": 5
     }
 }
